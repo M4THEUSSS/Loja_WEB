@@ -43,4 +43,63 @@ header{
 #menuDireito{
   margin-top: 10px;
   margin-right: 80px;
+  display: flex;
+  align-items: center;
+  
 }
+#menuDireito img{
+  width: 30px;
+  margin-right: 15px;
+  height: 30px;
+}
+.botao {
+  width: 50px;
+  height: 20px;
+  display: flex;
+  align-items: #menuEsquerdo {
+    color:#3c3b3b;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaçamento entre a imagem e o texto */
+  }
+  
+  #menuEsquerdo img {
+    width: 60px;
+    margin-top: 10px;
+  }
+  .menuCentral ul {
+    margin-top: 10px;
+    display: flex;
+    text-align: center;
+    gap: 25px;
+    list-style: none;
+  }
+  .menuCentral a{
+    color: rgb(94, 92, 92);
+    text-decoration:  none  ;
+    transition: background-color 0.3s;
+  }
+  .menuCentral ul a:hover {
+    background-color: rgba(120, 4, 4, 0.879);
+    border-radius: 30%;
+  }
+  #menuDireito{
+    margin-top: 10px;
+    margin-right: 80px;
+    display: flex;
+    align-items: center;
+    
+  }
+  #menuDireito img{
+    width: 35px;
+    margin-right: 15px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  ;
+}
+
