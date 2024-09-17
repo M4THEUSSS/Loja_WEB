@@ -26,6 +26,7 @@ header{
 #menuEsquerdo img {
   width: 60px;
   margin-top: 10px;
+  padding: 12px;
 }
 .menuCentral ul {
   padding: 0% 400px;
@@ -48,22 +49,23 @@ header{
   margin-top: 10px;
   margin-right: 80px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 #menuDireito img{
   width: 30px;
-  margin-right: 15px;
+  margin-right: 15px 85px;
   height: 30px;
+  margin-left: -35px;
 }
 /* inicio botão */
 .botao {
-  padding: 5px 50px;
+  padding: 10px 23px;
+  margin-left: -4px;
   justify-content: center;
   background-color: var(--corPrimaria);
   width: 80px;
   height: 20px;
   display: flex;
-  align-items:center;
   color: rgb(152, 151, 151);
   list-style: none;
   border-radius: 50px;
@@ -133,13 +135,25 @@ header{
 /* inicio Filtro */
 #filtro {
   margin-top: 20px;
-  padding: 40px;
+  padding: 10px 15px;
 }
 #filtro ul{
   margin-top: 12px;
   background-color: aqua;
+  list-style-type: none;
+  border-right: 2px solid black; 
+  padding: 5px  25px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+input[type="checkbox"] {
+  width: 18px; /* Defina a largura desejada */
+  height: 15px; /* Defina a altura desejada */
   
 }
+
+
 
 
 /* fim Filtro */
