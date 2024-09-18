@@ -1,0 +1,285 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:'Trebuchet MS', sans-serif
+  }
+  :root {
+    --corPrimaria: #3c3b3b;
+    --corV: #780404e0;
+  }
+  header{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  #menuEsquerdo {
+    color:var(--corPrimaria);
+    display:flex;
+    align-items: center;
+    gap: 8px; /* Espaçamento entre a imagem e o texto */
+  }
+  
+  #menuEsquerdo img {
+    width: 60px;
+    margin-top: 10px;
+    padding: 12px;
+  }
+  .menuCentral ul {
+    padding: 0% 400px;
+    margin-top: 10px;
+    display: flex;
+    text-align: center;
+    gap: 25px;
+    list-style: none;
+  }
+  .menuCentral a{
+    color: rgb(94, 92, 92);
+    text-decoration:  none ;
+    transition: background-color 0.3s;
+  }
+  .menuCentral ul a:hover {
+    background-color: var(--corV);
+    border-radius: 30%;
+  }
+  #menuDireito{
+    margin-top: 10px;
+    margin-right: 80px;
+    display: flex;
+    align-items: flex-end;
+  }
+  #menuDireito img{
+    width: 30px;
+    margin-right: 15px 85px;
+    height: 30px;
+    margin-left: -35px;
+  }
+  /* inicio botão */
+  .botao {
+    padding: 10px 23px;
+    margin-left: -4px;
+    justify-content: center;
+    background-color: var(--corPrimaria);
+    width: 80px;
+    height: 20px;
+    display: flex;
+    color: rgb(152, 151, 151);
+    list-style: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s,  box-shadow 0.2s;
+    box-shadow: 0 5px 15px var(--corV);
+  }
+  .botao:active {
+    background-color: #da4b36d1;
+    transform: scale(0.95);
+    box-shadow: 0 2px 10px rgba(148, 231, 154, 0.2);
+  }
+  /* fim botão */
+    .menuCentral a{
+      color: rgb(94, 92, 92);
+      text-decoration:  none  ;
+      transition: background-color 0.6s;
+    }
+    .menuCentral ul a:hover {
+      background-color: var(--corV);
+      border-radius: 30%;
+    }
+    #menuDireito{
+      margin-top: 10px;
+      margin-right: 80px;
+      display: flex;
+      align-items: center;
+      
+    }
+    #menuDireito img{
+      width: 35px;
+      margin-right: 15px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    /* inicio banner 1 */
+    #banner{
+      background-size: cover;
+      background-repeat: repeat;
+      justify-content: center;
+      display: flex;
+      padding: 20px;
+    }
+    /* fim banner */
+  
+  /* inicio banners central */
+  #bannerCentro {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: black;
+    transition: transform 0.3s ease;
+  }
+  #bannerCentro img:hover {
+     transform: scale(1.3);
+  }
+  #f3 {
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+  }
+  /* fim banners central */
+  
+  /* inicio Filtro */
+  #filtroProduto{
+      display: flex;
+      padding: 50px;
+  }
+  .filtro{
+    display: flex;
+    margin-right: 45px;
+    width: 500px;
+    font-size: x-large;
+    text-align: start;
+    
+  }
+  .filtro ul{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: wavy;
+    margin-top: 12px;
+    list-style-type: none;
+    border-right: 5px solid black;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    overflow: hidden;
+  }
+  .filtro ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    height: 100%;
+    background-color: black;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+  }
+  .filtro ul:hover::before {
+    transform: scaleY(1);
+  }
+  /* fim de filtro */
+  
+  input[type="checkbox"] {
+    width: 20px; /* Defina a largura desejada */
+    height: 20px; /* Defina a altura desejada */
+    margin-right: 5px;
+  }
+  
+  #linhaSuperior, #linhaInferior {
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    margin-left: 20px;
+  }
+  .item {
+    text-align: center;
+    margin: 10px;
+    margin: 3px;
+  }
+  .item img{
+    border-radius: 5%;
+    filter: brightness(0.5);
+    transition: filter 0.3s ease;
+  }
+  .item img:hover {
+    filter: brightness(1);
+  }
+  .hover-effect {
+    margin-top: 25px;
+    flex-direction: column;
+    font-size: 30px;
+    color: var(--corPrimaria); /* Cor inicial */
+    transition: color 0.3s ease; /* Transição suave */
+  }
+  .hover-effect:hover {
+    color: var(--corV); /* Cor ao passar o mouse */
+  }
+  #parceiros{   /* section parceiros  */
+    background-color: #cdc9cd98;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  #parceiros img{
+    border-radius: 60%;
+    width: 150px;
+    padding: 20px;
+  }
+  
+  footer{
+    height: 100px;
+    background-color: black;
+    color: var(--corPrimaria);
+    margin-top: 30px;
+    padding: 20px;
+  }
+  .fimEsquerdo{
+    text-decoration: line-through;
+    color: var(--corPrimaria);
+    padding: 10px;
+    align-items: self-start;
+  }
+  .fimCentro {
+    flex-direction: column;
+  }
+  .fimCentro h3{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .icones{
+    flex-direction: column;
+    align-items: center ;
+    display: flex;
+    padding: 5px;
+  }
+  i {
+    font-size: 15px; /* Tamanho do ícone */
+    color: var(--corPrimaria); /* Cor do ícone */
+    margin-right: 10px; /* Espaço entre ícones */
+    gap: 10px;
+  }
+  .contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .fimDireita {
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens à direita */
+    padding: 15px;
+  }
+  
+  .fimDireita ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: -80px 10px;
+    gap: 15px; /* Espaço entre os ícones */
+  }
+  
+  .fimDireita i {
+    font-size: 30px; /* Tamanho dos ícones */
+    color: #333; /* Cor dos ícones */
+  }
