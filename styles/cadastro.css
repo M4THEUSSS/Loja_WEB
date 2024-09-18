@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+  
+  :root {
+    --corPrimaria: #3c3b3b;
+    --corV: #780404e0;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #menuEsquerdo {
+    color: var(--corPrimaria);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  #menuEsquerdo img {
+    width: 60px;
+    margin-top: 10px;
+    padding: 12px;
+  }
+  
+  .menuCentral ul {
+    padding: 0 400px;
+    margin-top: 10px;
+    display: flex;
+    text-align: center;
+    gap: 25px;
+    list-style: none;
+  }
+  
+  .menuCentral a {
+    color: rgb(94, 92, 92);
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .menuCentral ul a:hover {
+    background-color: var(--corV);
+    border-radius: 30%;
+  }
+  
+  #menuDireito {
+    margin-top: 10px;
+    margin-right: 80px;
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .background {
+    background-image: url(/images/Fundo.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .Cadastro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .Cadastro-container:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  }
+  
+  .Cadastro-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .Cadastro-container label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .Cadastro-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .Cadastro-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--corPrimaria);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição para o efeito hover */
+  }
+  
+  .Cadastro-container button:hover {
+    background-color: #0056b3; /* Cor mais escura no hover */
+  }
+  .botao {
+    padding: 10px 23px;
+    margin-left: -4px;
+    justify-content: center;
+    background-color: var(--corPrimaria);
+    width: 80px;
+    height: 20px;
+    display: flex;
+    color: rgb(152, 151, 151);
+    list-style: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 5px 15px var(--corV);
+  }
+  
+  .botao:active {
+    background-color: #da4b36d1;
+    transform: scale(0.95);
+    box-shadow: 0 2px 10px rgba(148, 231, 154, 0.2);
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: var(--corPrimaria);
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .footerEsquerda {
+    text-decoration: line-through;
+    color: var(--corPrimaria);
+    padding: 10px;
+    align-items: flex-start;
+  }
+  
+  .footerCentro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .footerDireita {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 10px;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .footerDireita i {
+    font-size: 30px;
+    color: #333;
+    margin-right: 20px;
+  }
+  
