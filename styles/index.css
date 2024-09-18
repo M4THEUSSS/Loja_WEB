@@ -201,7 +201,8 @@ input[type="checkbox"] {
   filter: brightness(1);
 }
 .hover-effect {
-  text-align: center;
+  margin-top: 25px;
+  flex-direction: column;
   font-size: 30px;
   color: var(--corPrimaria); /* Cor inicial */
   transition: color 0.3s ease; /* Transição suave */
@@ -209,4 +210,76 @@ input[type="checkbox"] {
 .hover-effect:hover {
   color: var(--corV); /* Cor ao passar o mouse */
 }
+#parceiros{   /* section parceiros  */
+  background-color: #cdc9cd98;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+#parceiros img{
+  border-radius: 60%;
+  width: 150px;
+  padding: 20px;
+}
 
+footer{
+  height: 100px;
+  background-color: black;
+  color: var(--corPrimaria);
+  margin-top: 30px;
+  padding: 20px;
+}
+.fimEsquerdo{
+  text-decoration: line-through;
+  color: var(--corPrimaria);
+  padding: 10px;
+  align-items: self-start;
+}
+.fimCentro {
+  flex-direction: column;
+}
+.fimCentro h3{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+.icones{
+  flex-direction: column;
+  align-items: center ;
+  display: flex;
+  padding: 5px;
+}
+i {
+  font-size: 15px; /* Tamanho do ícone */
+  color: var(--corPrimaria); /* Cor do ícone */
+  margin-right: 10px; /* Espaço entre ícones */
+  gap: 10px;
+}
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.fimDireita {
+  display: flex;
+  justify-content: flex-end; /* Alinha os itens à direita */
+  padding: 15px;
+}
+
+.fimDireita ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: -80px 10px;
+  gap: 15px; /* Espaço entre os ícones */
+}
+
+.fimDireita i {
+  font-size: 30px; /* Tamanho dos ícones */
+  color: #333; /* Cor dos ícones */
+}
