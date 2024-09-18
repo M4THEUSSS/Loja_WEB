@@ -137,6 +137,37 @@ header{
   margin-top: 20px;
   padding: 10px 15px;
 }
+
+#filtroProduto{
+  display: flex;
+  
+  flex-direction: column;
+  justify-content:  center;
+  margin-top: 60px;
+ 
+}
+#linhaSuperior {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+.item {
+  text-align: center;
+  margin: 10px;
+}
+
+  
+
+
+
+
+
+
+
+
+
+
 #filtro ul{
   margin-top: 12px;
   background-color: aqua;
@@ -150,10 +181,23 @@ header{
 input[type="checkbox"] {
   width: 18px; /* Defina a largura desejada */
   height: 15px; /* Defina a altura desejada */
+}
+/* fim Filtro */
+
+/* catalogo */
+.catalogo {
+  margin-top: 10px;
+  padding: 10px 10px 10px;
+}
+#linhaSuperior{
+  display: flex;
+  align-items: center;
+  gap: 20px;
   
 }
+#linhaInferior {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
-
-
-
-/* fim Filtro */
