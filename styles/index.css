@@ -1,7 +1,7 @@
 *{
   margin: 0%;
   padding: 0%;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:'Trebuchet MS', sans-serif
 }
 :root {
   --corPrimaria: #3c3b3b;
@@ -133,71 +133,71 @@ header{
 /* fim banners central */
 
 /* inicio Filtro */
-#filtro {
-  margin-top: 20px;
-  padding: 10px 15px;
+#filtroProduto{
+    display: flex;
+    padding: 50px;
+}
+.filtro{
+  display: flex;
+  margin-right: 45px;
+  width: 500px;
+  font-size: x-large;
+  text-align: start;
+  
+}
+.filtro ul{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: wavy;
+  margin-top: 12px;
+  list-style-type: none;
+  border-right: 5px solid black;
+  padding: 5px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.filtro ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  background-color: black;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease;
+}
+.filtro ul:hover::before {
+  transform: scaleY(1);
+}
+/* fim de filtro */
+
+input[type="checkbox"] {
+  width: 20px; /* Defina a largura desejada */
+  height: 20px; /* Defina a altura desejada */
+  margin-right: 5px;
 }
 
-#filtroProduto{
+#linhaSuperior, #linhaInferior {
   display: flex;
-  
-  flex-direction: column;
-  justify-content:  center;
-  margin-top: 60px;
- 
-}
-#linhaSuperior {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  
+  justify-content: flex-start;
+  width: 70%;
+  margin-left: 20px;
 }
 .item {
   text-align: center;
   margin: 10px;
+  margin: 3px;
 }
-
-  
-
-
-
-
-
-
-
-
-
-
-#filtro ul{
-  margin-top: 12px;
-  background-color: aqua;
-  list-style-type: none;
-  border-right: 2px solid black; 
-  padding: 5px  25px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+.item img{
+  border-radius: 5%;
+  filter: brightness(0.5);
+  transition: filter 0.3s ease;
 }
-input[type="checkbox"] {
-  width: 18px; /* Defina a largura desejada */
-  height: 15px; /* Defina a altura desejada */
-}
-/* fim Filtro */
-
-/* catalogo */
-.catalogo {
-  margin-top: 10px;
-  padding: 10px 10px 10px;
-}
-#linhaSuperior{
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  
-}
-#linhaInferior {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.item img:hover {
+  filter: brightness(1);
 }
 
